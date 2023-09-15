@@ -161,6 +161,25 @@ nav.menu-flex a:last-child {
     opacity: 0.5;
 }
 
+/*MAIN SECTION*/
+
+.container-main {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.container-text {
+    width: 50%;
+}
+
+.container-text h1 {
+    color: var(--cor-azul-claro);
+}
+
+.textmain {
+    color: var(--cor-branco);
+}
+
 @media (max-width: 1024px) {
     .container {
         padding: 16px 64px;
