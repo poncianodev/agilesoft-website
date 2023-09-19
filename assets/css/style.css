@@ -215,6 +215,35 @@ nav.menu-flex a:last-child {
 }
 /*MAIN SECTION*/
 
+.sobre-nos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.sobre-nos-item {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    text-align: start;
+}
+
+.sobre-nos-item img {
+    object-fit: cover;
+    
+}
+
+.sobre-nos-item h2 {
+    text-transform: uppercase;
+    color: var(--cor-azul-claro);
+    font-size: 1.9rem;
+}
+
+.sobre-nos-item strong {
+    color: var(--cor-azul-claro);
+}
+
 /* RESPONSIVO */
 
 @media (max-width: 1024px) {
@@ -253,8 +282,17 @@ nav.menu-flex a:last-child {
     .hero-button {
         left: 2rem;
     }
+
     .hero-button {
         font-size: 1.5rem;
+    }
+
+    .sobre-nos-container {
+        flex-direction: column;
+    }
+
+    .sobre-nos-item {
+        width: 100%;
     }
 }
 
