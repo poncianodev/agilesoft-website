@@ -285,6 +285,7 @@ nav.menu-flex a:last-child {
     }
     .hero-button {
         top: 80%;
+        margin-top: 50px;
         left: 5px;
         font-size: 1.5rem;
     }
