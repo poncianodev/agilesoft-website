@@ -279,12 +279,13 @@ nav.menu-flex a:last-child {
 
 @media (max-width: 509px) {
     .hero-title {
+        top: 50%;
         font-size: 1.1rem;
         left: 5px;
         overflow: hidden;
     }
     .hero-button {
-        margin-top: 50px;
+        top: 70%;
         left: 5px;
         font-size: 1.5rem;
     }
