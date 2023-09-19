@@ -146,8 +146,8 @@ nav.menu-flex a:last-child {
     position: relative;
     background-image: url(../img/rocket.svg);
     background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: top; 
+    background-size: cover;
+    background-position: top;
     height: 100vh;
     max-width: 100%;
 }
@@ -172,47 +172,48 @@ nav.menu-flex a:last-child {
     color: #fff;
     font-size: 1.6rem;
 }
+.hero-title strong {
+    color: var(--cor-azul-claro);
+}
 
 .hero-button {
-    background-color: var(--cor-azul-médio);
+    background-color: var(--cor-azul-claro);
     position: absolute;
     top: 60%;
     left: 10rem;
     max-width: 16rem;
-    transform: translateY(-50%);
     z-index: 3;
     color: var(--cor-branco);
     font-weight: 500;
     font-size: 1.3rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     padding: 1.5rem;
     border-radius: 2rem;
-    transition: ease .8s;
+    border: none;
+}
+.hero-button:hover {
+    animation: myAnim 0.5s linear 0s 1 alternate-reverse forwards;
+}
+
+@keyframes myAnim {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .hero-button:hover {
     color: #121212;
     background-color: var(--cor-branco);
 }
-
 /*MAIN SECTION*/
-
-.container-main {
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-around;
-}
-.container-text {
-    width: 50%;
-}
-
-.container-text h1 {
-    color: var(--cor-azul-claro);
-}
-
-.textmain {
-    color: var(--cor-branco);
-}
 
 /* RESPONSIVO */
 
@@ -225,22 +226,66 @@ nav.menu-flex a:last-child {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     nav {
         display: none;
     }
 
     .container_header {
         padding: 16px 32px;
+        overflow: hidden;
+    }
+
+    .hero-bg {
+        background-position: right;
+        overflow: hidden;
+    }
+
+    .mobile-nav {
+        margin-right: 35px;
+    }
+
+    .hamburger {
+        right: 50px;
+    }
+
+    .hero-title,
+    .hero-button {
+        left: 2rem;
+    }
+    .hero-button {
+        font-size: 1.5rem;
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
+    nav {
+        margin-right: 35px;
+    }
     .mobile-nav {
         display: none;
+        margin-right: 35px;
     }
 
     .hamburger {
         display: none;
+    }
+
+    .hero-title,
+    .hero-button {
+        left: 2rem;
+    }
+}
+
+@media (max-width: 509px) {
+    .hero-title {
+        font-size: 1.1rem;
+        left: 5px;
+        overflow: hidden;
+    }
+    .hero-button {
+        top: 50%;
+        left: 5px;
+        font-size: 1.5rem;
     }
 }
