@@ -24,9 +24,9 @@
                 <nav>
                     <div class="menu-flex">
                         <a href="#">Início</a>
-                        <a href="#">Quem Somos</a>
-                        <a href="#">Projetos</a>
-                        <a href="#">Contato</a>
+                        <a href="#sobre-nos">Quem Somos</a>
+                        <a href="#projetos">Projetos</a>
+                        <a href="#contato">Contato</a>
                     </div>
                 </nav>
 
@@ -38,20 +38,22 @@
 
         <nav class="mobile-nav">
             <a href="#">Início</a>
-            <a href="#">Quem Somos</a>
-            <a href="#">Projetos</a>
-            <a href="#">Contato</a>
+            <a href="#sobre-nos-container">Quem Somos</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
         </nav>
 
         <div class="hero-bg">
             <div class="hero-title">
-                <h1>Transformamos ideias<br> em <strong>sites incríveis.</strong></h1>
+                <h1>Transformamos ideias<br> em <strong>sites incríveis</strong></h1>
             </div>
 
             <button class="hero-button">Vamos conversar</button>
         </div>
 
-        <section class="sobre-nos-container">
+        <hr>
+
+        <section class="sobre-nos-container" id="sobre-nos">
             <div class="sobre-nos-item">
                 <img src="assets/img/space.svg" alt="">
             </div>
@@ -79,12 +81,101 @@
                 Junte-se a nós nesta emocionante jornada online e deixe-nos ajudá-lo 
                 a construir algo verdadeiramente notável.
                 <strong>Seu sucesso é o nosso negócio.</strong></p>
-
-                
         </section>
-            <!--=============== GSAP ===============-->
-            <script src=""></script>
+        
+        <section id="services">
+
+            <div class="container-services">
+                  <h2 class="section-heading">Como fazemos a <strong>transformação</strong></h2>
+            </div>
+
+              <div class="container-services">
+                <div class="tab-container">
+                  <div class="tab-filter-container">
+
+                    <li class="filter-btn active" data-tab="web-design">
+                        <ion-icon name="color-palette-outline"></ion-icon>
+                      Identidade Visual
+                    </li>
+
+                    <li class="filter-btn" data-tab="web-development">
+                      <ion-icon name="logo-nodejs"></ion-icon>
+                      Criação de Sites
+                    </li>
+
+                    <li class="filter-btn" data-tab="ux-design">
+                    <ion-icon name="megaphone-outline"></ion-icon>
+                      Tráfego Pago
+                    </li>
+
+                </div>
+                  <div class="tab-filter-item-container">
+
+                    <div class="tab-item web-design select_tab">
+                      <div class="tab-content-left">
+                        <img
+                          src="assets/img/design-vetor.svg"
+                          alt="Identidade Visual"
+                          class="tab-img"
+                        />
+                      </div>
+                      <div class="tab-content-right">
+                        <h1 class="tab-heading">Identidade Visual</h1>
+                        <p class="paragraph">
+                            A identidade visual é crucial, pois é a imagem que representa uma empresa ou marca. Ela inclui elementos como logotipos, cores e estilos que se tornam reconhecíveis para o público. 
+                        </p>
+
+                      </div>
+                    </div>
+
+                    <div class="tab-item web-development">
+                      <div class="tab-content-left">
+                        <h2 class="tab-heading">Criação de Sites</h2>
+                        <p class="paragraph">
+                            Ter um site é fundamental nos dias de hoje, pois representa uma presença digital sólida.
+                            Ele funciona como uma vitrine online, oferecendo visibilidade 24 horas por dia, 7 dias por semana. 
+                        </p>
+
+                      </div>
+                      <div class="tab-content-right">
+                        <img
+                          src="assets/img/vetor-sites.svg"
+                          alt="Criação de sITES"
+                          class="tab-img"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="tab-item ux-design">
+                      <div class="tab-content-left">
+                        <img src="assets/img/trafego-pago.svg" alt="Tráfego Pago" class="tab-img" />
+                      </div>
+                      <div class="tab-content-right">
+                        <h2 class="tab-heading">Tráfego Pago</h2>
+                        <p class="paragraph">
+                            O tráfego pago é uma maneira eficaz de aumentar a visibilidade online e
+                            alcançar um público-alvo específico, mas requer um orçamento de publicidade para ser implementado.
+                        </p>
+ 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+            
         </main>
+
+        <footer>
+            <div class="back_to_top">
+                <ion-icon name="chevron-up-outline"></ion-icon>
+            </div>
+        </footer>
+
         <script type="text/javascript" src="./assets/js/main.js"></script>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
 </html>
