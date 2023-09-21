@@ -22,6 +22,8 @@ body {
     --cor-azul-escuro: #002336;
     --container: 120rem;
     --primary: hsl(201.43, 13.21%, 58.43%);
+    --container2: 112rem;
+    --m-auto1: 0 auto;
 }
 
 /* HEADER */
@@ -354,7 +356,6 @@ strong {
     width: 30rem;
 }
 
-
 /* FOOTER */
 
 .back_to_top {
@@ -382,6 +383,87 @@ ion-icon {
     pointer-events: auto;
     cursor: pointer;
     transform: translateY(0rem);
+}
+
+/*SECTION PORTIFÓLIO*/
+
+.container2 {
+    max-width: var(--container2);
+    margin: var(--m-auto1);
+    padding: 0 1rem;
+}
+
+.filter-project-items1 {
+    padding: 1rem 0 3rem 0;
+}
+.filter-project-items1::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.filter-menu1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    text-align: center;
+}
+.filter-btn1 {
+    padding: 0.8rem 4rem;
+    background: var(--cor-azul-claro);
+    color: var(--cor-preto);
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.filter-btn1.active {
+    background: var(--cor-azul-escuro);
+    color: var(--white);
+    border-radius: 0.2rem;
+    transition: all 0.5s ease;
+}
+
+.filter-btn1:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.filter-btn1:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.filter-project-item1 {
+    width: 100%;
+    float: left;
+    height: 30rem;
+    text-align: center;
+    background: var(--cor-preto2);
+}
+
+.filter-project-item1 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    -webkit-aspect-ratio: 1/1;
+    object-fit: contain;
+}
+.filter-project-item1.show {
+    width: 100%;
+    height: 30rem;
+    padding: 1rem;
+    transition-delay: 0.2s;
+    backface-visibility: visible;
+    visibility: visible;
+}
+
+.filter-project-item1.hide {
+    width: 0%;
+    height: 0;
+    padding: 0;
+    backface-visibility: hidden;
+    visibility: hidden;
 }
 
 /* RESPONSIVO E KEYFRAME*/
@@ -469,6 +551,63 @@ ion-icon {
         right: 0px;
     }
 }
+
+/*RESPONSIVE PORTFÓLIO*/
+
+@media (min-width: 900px) {
+    .filter-project-item1 {
+        width: calc(100% / 3);
+    }
+    .filter-project-item1.show {
+        width: calc(100% / 3);
+    }
+
+    .filter-project-item1:first-child {
+        border-top-left-radius: 20px;
+    }
+
+    .filter-project-item1:nth-child(3) {
+        border-top-right-radius: 20px;
+    }
+
+    .filter-project-item1:nth-last-child(1) {
+        border-bottom-right-radius: 20px;
+    }
+
+    .filter-project-item1:nth-last-child(3) {
+        border-bottom-left-radius: 20px;
+    }
+}
+@media (max-width: 605px) {
+    .filter-menu1 {
+        gap: 0.5rem;
+    }
+    .filter-btn1 {
+        flex: calc(50% - 1rem);
+    }
+    .filter-project-item1:first-child {
+        border-top-left-radius: 20px;
+    }
+    .filter-project-item1:nth-child(2) {
+        border-top-right-radius: 20px;
+    }
+    .filter-project-item1:nth-last-child(1) {
+        border-bottom-right-radius: 20px;
+    }
+    .filter-project-item1:nth-last-child(2) {
+        border-bottom-left-radius: 20px;
+    }
+}
+@media (max-width: 500px) {
+    .filter-project-item1 {
+        width: 100%;
+    }
+    .filter-project-item1.show {
+        width: 100%;
+    }
+}
+
+/*KEYFRAMES*/
 
 @keyframes myAnim {
     0% {
