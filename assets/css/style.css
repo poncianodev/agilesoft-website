@@ -503,71 +503,105 @@ ion-icon {
     transform: translateY(0rem);
 }
 
+/*FOOTER*/
+footer {
+    height: 40rem;
+    background-image: url(../img/Rectangle-footer.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.footer-text {
+    position: relative;
+}
+.footer-text h2 {
+    max-width: 320px;
+    font-size: 2rem;
+    position: relative;
+    left: 5rem;
+    color: var(--cor-azul-claro);
+}
+.footer-text p{
+    position: relative;
+    left: 5rem;
+}
+
+
+.footer-area {
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    margin: 3rem auto;
+    align-items: center;
+}
 /*FORMULÁRIO*/
 
-.form h2 {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1.8rem;
+.form {
 }
 
-.form-area{
-    display: flex;
-    width: 100%;
-
-}
-
-.form-text{
-    width: 50%;
-}
-
-form {
-    background-color: var(--cor-preto);
-    padding: 1.5rem;
+.form form {
     display: flex;
     flex-direction: column;
-    width: 20%;
-    max-width: 80%;
-    height: 100%;
-    margin: 1.5rem auto;
-    border-radius: 1rem;
-}
-
-form h3 {
-    font-size: 2rem;
-    text-align: center;
+    background-color: var(--cor-preto);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    height: 30rem;
+    width: 100%;
 }
 
 form input {
+    width: 100%;
+    align-items: center;
     border-radius: 0.5rem;
     border: none;
-    padding: 0.5rem;
-    width: 90%;
+    padding: 1rem 0.5rem;
     margin: 1rem auto;
     color: var(--cor-preto);
     font-size: 1rem;
 }
 
 form .text {
-    height: 4rem;
-    padding: 0.3rem;
+    height: 5rem;
 }
 
 form button {
-    margin: 1.6rem auto;
-    background-color: var(--cor-azul-escuro);
+    width: 100%;
+    margin: 1rem auto;
+    padding: 1.1rem;
+    background-color: var(--cor-azul-claro);
     color: var(--cor-branco);
     border: none;
-    padding: 1rem;
     border-radius: 1rem;
-    width: 90%;
     font-weight: bold;
     font-size: 1rem;
     cursor: pointer;
+    transition: 1s;
 }
 
 form button:hover {
     background-color: var(--cor-azul-médio);
+    color: var(--cor-azul-claro);
+}
+
+/*CHECKBOX*/
+.checkbox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.checkbox input {
+    width: 1rem;
+    margin-right: 1rem;
+}
+
+.checkbox p {
+    font-size: 0.8rem;
+}
+
+.checkbox p a {
     color: var(--cor-azul-claro);
 }
 
