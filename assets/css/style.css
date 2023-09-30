@@ -536,9 +536,6 @@ footer {
 }
 /*FORMULÁRIO*/
 
-.form {
-}
-
 .form form {
     display: flex;
     flex-direction: column;
