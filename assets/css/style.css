@@ -522,11 +522,10 @@ footer {
     left: 5rem;
     color: var(--cor-azul-claro);
 }
-.footer-text p{
+.footer-text p {
     position: relative;
     left: 5rem;
 }
-
 
 .footer-area {
     display: flex;
