@@ -441,6 +441,7 @@ button.card-button a {
     gap: 20px;
     flex-wrap: wrap;
     flex-grow: 1;
+    cursor: pointer;
 }
 
 .card {
@@ -456,7 +457,7 @@ button.card-button a {
 
 .card img {
     width: 100%;
-    height: 20rem;
+    height: 25rem;
     object-fit: cover;
     border-radius: 8px 8px 0px 0px;
 }
@@ -500,6 +501,74 @@ ion-icon {
     pointer-events: auto;
     cursor: pointer;
     transform: translateY(0rem);
+}
+
+/*FORMULÁRIO*/
+
+.form h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
+
+.form-area{
+    display: flex;
+    width: 100%;
+
+}
+
+.form-text{
+    width: 50%;
+}
+
+form {
+    background-color: var(--cor-preto);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    max-width: 80%;
+    height: 100%;
+    margin: 1.5rem auto;
+    border-radius: 1rem;
+}
+
+form h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+form input {
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.5rem;
+    width: 90%;
+    margin: 1rem auto;
+    color: var(--cor-preto);
+    font-size: 1rem;
+}
+
+form .text {
+    height: 4rem;
+    padding: 0.3rem;
+}
+
+form button {
+    margin: 1.6rem auto;
+    background-color: var(--cor-azul-escuro);
+    color: var(--cor-branco);
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 90%;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--cor-azul-médio);
+    color: var(--cor-azul-claro);
 }
 
 /* RESPONSIVO E KEYFRAME*/
@@ -593,7 +662,6 @@ ion-icon {
         right: 0px;
     }
 }
-
 
 @keyframes myAnim {
     0% {

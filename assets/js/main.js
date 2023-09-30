@@ -89,3 +89,8 @@ const filtercards = e => {
 };
 
 buttonSection.forEach(button => button.addEventListener("click", filtercards));
+
+//INPUT-TEL
+document.getElementById("telefone").addEventListener("input", function () {
+    this.value = this.value.replace(/\D/g, "");
+});
