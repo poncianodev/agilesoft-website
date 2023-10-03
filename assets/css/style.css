@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
 body {
     margin: 0;
@@ -8,8 +8,7 @@ body {
     outline: 0;
     background-color: var(--cor-preto2);
     color: var(--cor-branco);
-    font-family: "Poppins", sans-serif;
-    overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
 }
 
 :root {
@@ -17,7 +16,7 @@ body {
     --cor-branco2: hsl(0, 0%, 99%);
     --cor-cinza: #d0d0d0;
     --cor-preto: #161716;
-    --cor-preto2: #121212;
+    --cor-preto2: #0D0E0D;
     --cor-azul-claro: #029fa6;
     --cor-azul-médio: #154c62;
     --cor-azul-escuro: #002336;
@@ -168,7 +167,7 @@ nav.menu-flex a:last-child {
 
 .hero-bg::before {
     content: "";
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
     /* Cor preta com 50% de opacidade */
     position: absolute;
     top: 0;
@@ -186,7 +185,6 @@ nav.menu-flex a:last-child {
     z-index: 2;
     color: #fff;
     font-size: 1.6rem;
-    font-family: "Poppins", sans-serif;
     text-transform: uppercase;
 }
 
@@ -339,6 +337,7 @@ strong {
     position: relative;
     overflow: hidden;
     border-radius: 0 0 1.2rem 1.2rem;
+    height: 35rem;
 }
 
 .tab-item {
@@ -406,8 +405,7 @@ button.filter-button {
 
 .active-portfolio {
     color: white;
-    background-color: var(--cor-azul-médio);
-}
+    background-color: var(--cor-azul-médio);}
 
 button.card-button {
     border-radius: 0.5rem;
@@ -419,7 +417,6 @@ button.card-button {
     font-weight: 500;
     color: var(--cor-branco);
     background-color: transparent;
-    transition: all 0.7s ease;
 }
 
 button.card-button:hover {
@@ -471,19 +468,6 @@ button.card-button a {
     border-radius: 8px 8px 0px 0px;
 }
 
-.card-body {
-    padding: 15px 20px;
-}
-
-.card-title {
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.card-description {
-    font-size: 14px;
-}
-
 /* FOOTER */
 
 .back_to_top {
@@ -523,7 +507,7 @@ footer {
     background-position: top;
     background-repeat: no-repeat;
     background-size: auto;
-    margin: 8.5rem 0 3rem 0;
+    margin: 85.rem 0 3rem 0;
 }
 
 .footer-text {
@@ -531,16 +515,19 @@ footer {
 }
 
 .footer-text h2 {
-    max-width: 320px;
+    max-width: 30rem;
     font-size: 2rem;
     position: relative;
-    left: 5rem;
+    left: 12rem;
     color: var(--cor-azul-claro);
 }
 
 .footer-text p {
     position: relative;
-    left: 5rem;
+    left: 12rem;
+    max-width: 40rem;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
 }
 
 .footer-area {
@@ -560,11 +547,11 @@ footer {
     padding: 2rem;
     border-radius: 1.5rem;
     height: 30rem;
-    width: 100%;
+    margin-right: 8rem;
 }
 
 form input {
-    width: 100%;
+    width: 95%;
     align-items: center;
     border-radius: 0.5rem;
     border: none;
@@ -668,13 +655,17 @@ form button:hover {
 
 /* RESPONSIVO E KEYFRAME*/
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px)  {
     .container_header {
         padding: 16px 64px;
     }
 
     .home_title {
         font-size: 1.8rem;
+    }
+
+    .hero-bg {
+        height: 100vh;
     }
 
     .sobre-nos-container {
@@ -710,6 +701,32 @@ form button:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    
+    .tab-filter-item-container{
+        padding-bottom: 1rem;
+    }
+
+    .tab-img {
+        width: 25rem;
+    }
+
+    .tab-img-x {
+        margin-top: 3rem;
+        width: 20rem;
+    }
+
+    .tab-img-y {
+        margin-top: 3rem;
+        width: 25rem;
+    }
+
+    .tab-item {
+        place-items: unset;
+    }
+
+    .tab-content-right {
+        margin-top: -2rem;
     }
 }
 
