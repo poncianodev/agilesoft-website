@@ -9,6 +9,7 @@ body {
     background-color: var(--cor-preto2);
     color: var(--cor-branco);
     font-family: "Montserrat", sans-serif;
+    /* overflow-x: hidden; */
 }
 
 :root {
@@ -405,7 +406,8 @@ button.filter-button {
 
 .active-portfolio {
     color: white;
-    background-color: var(--cor-azul-médio);}
+    background-color: var(--cor-azul-médio);
+}
 
 button.card-button {
     border-radius: 0.5rem;
@@ -655,7 +657,7 @@ form button:hover {
 
 /* RESPONSIVO E KEYFRAME*/
 
-@media (max-width: 1024px)  {
+@media (max-width: 1024px) {
     .container_header {
         padding: 16px 64px;
     }
@@ -702,13 +704,13 @@ form button:hover {
         flex-direction: column;
         align-items: center;
     }
-    
-    .tab-filter-item-container{
+
+    .tab-filter-item-container {
         padding-bottom: 1rem;
     }
 
     .tab-img {
-        width: 25rem;
+        width: 20rem;
     }
 
     .tab-img-x {
@@ -727,6 +729,20 @@ form button:hover {
 
     .tab-content-right {
         margin-top: -2rem;
+    }
+
+    .footer-text h2 {
+        left: 3rem;
+        max-width: 25rem;
+    }
+
+    .footer-text p {
+        left: 3rem;
+        max-width: 25rem;
+    }
+
+    .form form {
+        margin-right: 0;
     }
 }
 
@@ -789,9 +805,12 @@ form button:hover {
     .footer-text {
         padding: 5rem 0;
     }
+    .sobre-nos-item p {
+        max-width: 35rem;
+    }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 780px) {
     nav {
         margin-right: 35px;
     }
