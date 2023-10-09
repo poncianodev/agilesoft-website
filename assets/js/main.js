@@ -95,6 +95,8 @@ document.getElementById('telefone').addEventListener('input', function () {
   this.value = this.value.replace(/\D/g, '');
 });
 
+
+//ALERT DE MSG
 function alertar() {
   setTimeout(function () {
     alert('Sua mensagem foi enviada!');
