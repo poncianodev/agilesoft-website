@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="shortcut icon" href="./assets/img/favicon-agile.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/responsive.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="" />
   <title>Agile Soft - Transformamos ideias em sites incríveis.</title>
 </head>
@@ -44,7 +45,7 @@
       <h1>Transformamos ideias<br> em <strong>sites incríveis</strong></h1>
     </div>
 
-    <button class="hero-button"  >Vamos conversar</button>
+    <button class="hero-button">Vamos conversar</button>
   </div>
 
   <hr>
@@ -86,81 +87,56 @@
   <section id="services">
 
     <div class="container-services">
-      <h2 class="section-heading">Como fazemos a <strong>transformação</strong></h2>
+      <h2 class="portfolio-heading">Como fazemos a <strong>transformação</strong></h2>
     </div>
 
-    <div class="container-services">
-      <div class="tab-container">
-        <div class="tab-filter-container">
-
-          <li class="filter-btn active" data-tab="web-design">
-            <ion-icon name="color-palette-outline"></ion-icon>
-            Identidade Visual
-          </li>
-
-          <li class="filter-btn" data-tab="web-development">
-            <ion-icon name="logo-nodejs"></ion-icon>
-            Criação de Sites
-          </li>
-
-          <li class="filter-btn" data-tab="ux-design">
-            <ion-icon name="megaphone-outline"></ion-icon>
-            Tráfego Pago
-          </li>
-
+    <div class="cards-container">
+      <div class="service-card">
+        <div class="card-icon">
+          <ion-icon name="logo-nodejs"></ion-icon>
         </div>
-        <div class="tab-filter-item-container">
 
-          <div class="tab-item web-design select_tab">
-            <div class="tab-content-left">
-              <img src="assets/img/design-vetor.svg" alt="Identidade Visual" class="tab-img" />
-            </div>
-            <div class="tab-content-right">
-              <h1 class="tab-heading">Identidade Visual</h1>
-              <p class="paragraph">
-                A identidade visual é crucial, pois é a imagem que representa uma empresa ou marca. Ela inclui elementos
-                como logotipos, cores e estilos que se tornam reconhecíveis para o público.
-              </p>
+        <h3 class="h3 card-title">Criação de Sites</h3>
 
-            </div>
-          </div>
+        <p class="card-text">
+          Ter um site é fundamental nos dias de hoje, pois representa uma presença digital sólida.
+          Ele funciona como uma vitrine online, oferecendo visibilidade 24 horas por dia, 7 dias por semana.
+        </p>
+      </div>
 
-          <div class="tab-item web-development">
-            <div class="tab-content-left">
-              <img src="assets/img/vetor-sites.svg" alt="Criação de Sites" class="tab-img-x" />
-            </div>
-            <div class="tab-content-right">
-              <h2 class="tab-heading">Criação de Sites</h2>
-              <p class="paragraph">
-                Ter um site é fundamental nos dias de hoje, pois representa uma presença digital sólida.
-                Ele funciona como uma vitrine online, oferecendo visibilidade 24 horas por dia, 7 dias por semana.
-              </p>
-            </div>
-          </div>
-
-          <div class="tab-item ux-design">
-            <div class="tab-content-left">
-              <img src="assets/img/trafego-pago.svg" alt="Tráfego Pago" class="tab-img-y" />
-            </div>
-            <div class="tab-content-right">
-              <h2 class="tab-heading">Tráfego Pago</h2>
-              <p class="paragraph">
-                O tráfego pago é uma maneira eficaz de aumentar a visibilidade online e
-                alcançar um público-alvo específico, mas requer um orçamento de publicidade para ser implementado.
-              </p>
-
-            </div>
-          </div>
+      <div class="service-card">
+        <div class="card-icon">
+          <ion-icon name="color-palette-outline"></ion-icon>
         </div>
+
+        <h3 class="h3 card-title">Identidade Visual</h3>
+
+        <p class="card-text">
+          A identidade visual é crucial, pois é a imagem que representa uma empresa ou marca. Ela inclui elementos
+          como logotipos, cores e estilos que se tornam reconhecíveis para o público.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="card-icon">
+          <ion-icon name="megaphone-outline"></ion-icon>
+        </div>
+
+        <h3 class="h3 card-title">Tráfego Pago</h3>
+
+        <p class="card-text">
+          O tráfego pago é uma maneira eficaz de aumentar a visibilidade online e
+          alcançar um público-alvo específico, mas requer um orçamento de publicidade para ser implementado.
+        </p>
       </div>
     </div>
+
   </section>
 
   <hr>
 
   <section class="container-portfolio">
     <h2 class="portfolio-heading">VEJA ALGUNS DE NOSSOS <strong>PROJETOS</strong></h2>
-
 
     <div class="buttons-section">
       <button class="filter-button active-portfolio" data-name="all">Todos</button>
@@ -171,26 +147,79 @@
     <div class="cards-section">
       <div data-name="sites" class="card">
         <img src="./assets/img/mockuo website.png" alt="">
-
       </div>
       <div data-name="sites" class="card">
         <img src="./assets/img/mockup-computer2.png" alt="">
-
       </div>
       <div data-name="sites" class="card">
         <img src="./assets/img/mockup-computer3.png" alt="">
-
-
-
       </div>
       <div data-name="design" class="card">
         <img src="./assets/img/id1.png" alt="">
-
       </div>
-
   </section>
 
   <hr>
+
+  <section class="team" id="team">
+    <h2 class="portfolio-heading">CONHEÇA NOSSA <strong>EQUIPE</strong></h2>
+
+    <div class="team_div">
+      <div class="team_box">
+        <div class="team_content_box team_box1">
+          <div class="team_center">
+            <h2 class="team_heading">THALES HENRIQUE</h2>
+            <hr>
+            <p class="team_description">Co-fundador e Desenvolvedor Front-end</p>
+            <div class="team_social">
+              <ion-icon name="logo-instagram" class="down"></ion-icon>
+              <ion-icon name="logo-linkedin" class="top"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="team_box">
+        <div class="team_content_box team_box1">
+          <div class="team_center">
+            <h2 class="team_heading">LUCAS PONCIANO</h2>
+            <hr>
+            <p class="team_description">Co-fundador e Desenvolvedor Front-end</p>
+            <div class="team_social">
+              <ion-icon name="logo-instagram" class="down"></ion-icon>
+              <ion-icon name="logo-linkedin" class="top"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="team_box">
+        <div class="team_content_box team_box1">
+          <div class="team_center">
+            <h2 class="team_heading">INARAÍ SILVA</h2>
+            <hr>
+            <p class="team_description">Gestora de Tráfego</p>
+            <div class="team_social">
+              <ion-icon name="logo-instagram" class="down"></ion-icon>
+              <ion-icon name="logo-linkedin" class="top"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="team_box">
+        <div class="team_content_box team_box1">
+          <div class="team_center">
+            <h2 class="team_heading">CINTHIA LIMA</h2>
+            <hr>
+            <p class="team_description">Gestora de Tráfego</p>
+            <div class="team_social">
+              <ion-icon name="logo-instagram" class="down"></ion-icon>
+              <ion-icon name="logo-linkedin" class="top"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   </main>
 
@@ -207,7 +236,7 @@
       </div>
 
       <div class="form">
-        <form  action="https://formsubmit.co/agilesoftsystem@gmail.com" method="POST">
+        <form action="https://formsubmit.co/agilesoftsystem@gmail.com" method="POST">
 
           <input type="text" name="name" required placeholder="Qual o seu nome?">
           <input type="text" id="telefone" name="telefone" required maxlength="11" placeholder="Seu Whatsapp" />
@@ -215,7 +244,7 @@
           <input class="text" type="text" name="text" required placeholder="Sua mensagem">
           <button type="submit" onclick="alertar()">ENVIAR</button>
 
-          <input  type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
           <input type="hidden" name="_captcha" value="false">
           <div class="checkbox">
             <input class="check" type="checkbox" name="checkbox">
