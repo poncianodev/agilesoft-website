@@ -334,7 +334,7 @@
   }
 
   .portfolio-heading {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .service-card {
@@ -429,6 +429,22 @@
   .form {
     width: 300px;
   }
+
+  #services {
+    margin: auto;
+
+
+  }
+
+  .cards-section{
+    width: 90%;
+  }
+
+  .card img{
+    width: 100%;
+    object-fit: contain;
+  }
+  
 }
 
 @media (max-width: 320px) {
