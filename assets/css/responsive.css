@@ -158,35 +158,68 @@
     display: none;
   }
 
+  .container_header {
+    padding: 32px 60px;
+  }
+
+  .container_header .nav-logo {
+    width: 40px;
+  }
+
+  .hamburger {
+    width: 40px;
+  }
+
   .hero-title h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
   }
 
+  .hero-title {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   button.hero-button {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 1rem;
-    top: 77%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 
   .sobre-nos-container {
+    flex-direction: column;
     margin: 0 auto 5rem;
   }
 
   .sobre-nos-item {
     width: 100%;
+    text-align: center;
   }
 
   .sobre-nos-item img {
     width: 100%;
-    margin: 0 auto -2rem;
+    margin: 0 auto -4rem;
   }
 
   .sobre-nos-item p {
     width: 90vw;
-    text-align: left;
+    font-size: 0.8rem;
+    text-align: justify;
+    margin: auto;
+  }
+
+  .container-services .portfolio-heading {
+    font-size: 1.5rem;
+  }
+
+  .cards-container {
+    flex-direction: column;
+  }
+
+  .service-card {
+    max-width: 80%;
   }
 
   .buttons-section {
@@ -207,16 +240,35 @@
     height: 20rem;
   }
 
-  .footer-text h2 {
-    padding-top: 2rem;
-    font-size: 1.5rem;
-    margin-left: 1rem;
+  /**/
+
+  .footer-area {
+    flex-direction: column;
+  }
+
+  .footer-text {
+    margin-bottom: 5rem;
+  }
+
+  .footer-text h2,
+  .footer-text p {
+    position: static;
+    margin: auto;
+    width: 80%;
+    text-align: justify;
   }
 
   .footer-text p {
     font-size: 1rem;
-    width: 320px;
-    margin-left: 1rem;
+  }
+
+  .footer-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .form form {
+    width: 70%;
+    margin: auto;
   }
 
   .footer-end img {
@@ -242,10 +294,6 @@
   .footer-end p {
     width: 10rem;
     font-size: 0.5rem;
-  }
-
-  .form {
-    width: 300px;
   }
 
   footer {
@@ -432,19 +480,16 @@
 
   #services {
     margin: auto;
-
-
   }
 
-  .cards-section{
+  .cards-section {
     width: 90%;
   }
 
-  .card img{
+  .card img {
     width: 100%;
     object-fit: contain;
   }
-  
 }
 
 @media (max-width: 320px) {
