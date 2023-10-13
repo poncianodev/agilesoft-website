@@ -60,7 +60,6 @@
 }
 
 @media (min-width: 646px) and (max-width: 768px) {
-
   nav {
     display: none;
   }
@@ -155,7 +154,6 @@
 }
 
 @media (min-width: 426px) and (max-width: 645px) {
-
   nav {
     display: none;
   }
@@ -191,7 +189,6 @@
     text-align: left;
   }
 
-
   .buttons-section {
     margin: auto;
     margin-bottom: 5rem;
@@ -225,7 +222,6 @@
   .footer-end img {
     width: 30px;
     margin-left: 10px;
-
   }
 
   .social-links a {
@@ -233,17 +229,14 @@
     height: 30px;
     line-height: 35px;
     margin: 0px 2px;
-
   }
 
   .social-links {
     margin-right: 10px;
-
   }
 
   .footer-end {
     gap: 1rem;
-
   }
 
   .footer-end p {
@@ -266,13 +259,20 @@
 }
 
 @media (max-width: 425px) {
-
   nav {
     display: none;
   }
 
   .container_header {
     padding: 16px 64px;
+  }
+
+  .container_header img {
+    width: 40px;
+  }
+
+  .hamburger {
+    width: 40px;
   }
 
   .hero-bg {
@@ -286,12 +286,12 @@
 
   .hero-title {
     top: 50%;
-    left: 0;
+    left: auto;
+    text-align: center;
   }
 
   .hero-title h1 {
-    font-size: 2rem;
-    text-align: center;
+    font-size: 1.5rem;
   }
 
   button.hero-button {
@@ -299,14 +299,14 @@
     left: 50%; /* Centraliza horizontalmente */
     transform: translate(-50%, -50%);
     padding: 1.2rem;
-    font-size: 1.2rem;
-    transition: transform .4s ease, box-shadow .4s ease;
+    font-size: 1rem;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    width: 12rem;
   }
-
 
   button.hero-button:hover {
     transform: translate(-50%, -50%);
-  } 
+  }
 
   .sobre-nos-container {
     margin: 0 auto 5rem;
@@ -327,6 +327,14 @@
     margin: 0 auto;
     max-width: 20rem;
     text-align: center;
+    font-size: 0.8rem;
+    text-align: justify;
+    line-height: 1.2rem;
+    padding: 1.5rem;
+  }
+
+  .portfolio-heading {
+    font-size: 1.8rem;
   }
 
   .service-card {
@@ -355,27 +363,14 @@
   .card img {
     height: 20rem;
   }
-  
+
   .footer-area {
     flex-direction: column;
-  }
-
-  .footer-text h2 {
-    padding-top: 2rem;
-    font-size: 1.5rem;
-    margin-left: 1rem;
-  }
-
-  .footer-text p {
-    font-size: 1rem;
-    width: 320px;
-    margin-left: 1rem;
   }
 
   .footer-end img {
     width: 30px;
     margin-left: 10px;
-
   }
 
   .social-links a {
@@ -383,16 +378,34 @@
     height: 30px;
     line-height: 35px;
     margin: 0px 2px;
-
   }
 
   .social-links {
     margin-right: 10px;
+  }
 
+  .footer-text {
+    margin-bottom: 5rem;
+  }
+
+  .footer-text h2,
+  .footer-text p {
+    position: static;
+    margin: auto;
+    width: 80%;
+  }
+
+  .footer-text p {
+    font-size: 0.8rem;
+  }
+
+  .footer-text h2 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
   }
 
   .form form {
-    
+    width: 80%;
   }
 
   footer {
@@ -406,7 +419,6 @@
 
   .footer-end {
     gap: 1rem;
-
   }
 
   .footer-end p {
@@ -416,6 +428,14 @@
 
   .form {
     width: 300px;
+  }
+}
+
+@media (max-width: 320px) {
+  .team_div {
+    padding: 2rem;
+
+    margin: auto;
   }
 }
 
