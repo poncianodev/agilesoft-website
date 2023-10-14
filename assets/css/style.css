@@ -343,13 +343,13 @@ button.filter-button {
 }
 
 .active-portfolio {
-  color: white;
+  color: var(--cor-branco);
   background-color: var(--cor-azul-médio);
 }
 
 button.card-button {
   border-radius: 0.5rem;
-  border: 1px solid white;
+  border: 1px solid var(--cor-branco);
   cursor: pointer;
   padding: 0.7rem 0.8rem;
   margin: 1.2rem 0 0;
@@ -361,7 +361,7 @@ button.card-button {
 
 button.card-button:hover {
   background-color: var(--cor-azul-claro);
-  color: #fff;
+  color: var(--cor-branco);
   border: 1px solid var(--cor-preto);
 }
 
@@ -369,7 +369,7 @@ button.card-button a {
   text-decoration: none;
 }
 
-.portfolio-heading {
+.heading {
   margin: 0 0 3rem 0;
   font-size: 2.5rem;
   padding-bottom: 1.2rem;
@@ -379,7 +379,7 @@ button.card-button a {
   text-align: center;
 }
 
-.portfolio-heading strong {
+.heading strong {
   word-wrap: break-word;
 }
 
@@ -409,7 +409,7 @@ button.card-button a {
   width: 100%;
   height: 25rem;
   object-fit: cover;
-  border-radius: 8px 8px 0px 0px;
+  border-radius: 1rem;
 }
 
 /* TEAM */
