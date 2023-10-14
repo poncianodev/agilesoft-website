@@ -83,32 +83,90 @@
     left: 2rem;
   }
 
+  .hero-title {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+  }
+
+  .hero-title h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
   .hero-button {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    padding: 1.2rem;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .hero-button:hover {
+    transform: translate(-50%, -50%);
   }
 
   .sobre-nos-container {
     flex-direction: column;
+    margin: 2rem 0 7rem 0;
   }
 
   .sobre-nos-item {
     width: 100%;
   }
 
+  .sobre-nos-item img {
+    width: 100%;
+    margin: 0 auto -5rem;
+  }
+
+  .sobre-nos-item h2 {
+    font-size: 1.6rem;
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  .sobre-nos-item p {
+    width: 80%;
+    font-size: 1.2rem;
+    text-align: left;
+    margin: 0 auto;
+  }
+
+  .card {
+    flex-basis: 38rem;
+    max-width: 90%;
+  }
+
+  .card img {
+    height: 100%;
+  }
+
   .cards-container {
     flex-direction: column;
   }
 
+  #services {
+    margin: 7rem 0;
+  }
+
   .service-card {
-    max-width: 100%;
+    max-width: 60%;
   }
 
   .heading {
-    font-size: 2rem;
+    font-size: 2.1rem;
+    width: 80%;
+    margin: 0 auto 1rem;
   }
 
   .buttons-section {
     margin: 2rem 15rem;
+  }
+
+  .team {
+    margin: 7rem 0 5rem 0;
   }
 
   .footer-area {
@@ -119,16 +177,45 @@
     padding: 5rem 0;
   }
 
+  .footer-text h2 {
+    position: static;
+    font-size: 1.7rem;
+    margin: 2rem auto;
+    width: 90%;
+    text-align: center;
+  }
+
+  .footer-text p {
+    position: static;
+    font-size: 1.1rem;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+
+  }
+
+  .form {
+    margin-right: 4.5rem;
+  }
+
   .footer-text p,
   .footer-text h2 {
     left: 0;
   }
 
-  .sobre-nos-item p {
-    max-width: 35rem;
+  .footer-end p {
+    width: 50%;
+    font-size: 1rem;
+    text-align: center;
+    padding-left: 3rem;
+  }
+
+  .social-links a {
+    margin: 0 3px;
   }
 
   footer {
+    background: linear-gradient(to bottom, rgba(13, 14, 13, 1), rgba(0, 35, 54, 1));
     background-size: cover;
     overflow: hidden;
   }
@@ -217,16 +304,16 @@
     margin: 2rem 0;
   }
 
-  .sobre-nos-item img {
-    width: 100%;
-    margin: 0 auto -4rem;
-  }
-
   .sobre-nos-item p {
     width: 80%;
     font-size: 1.1rem;
     text-align: left;
     margin: 0 auto;
+  }
+
+  .sobre-nos-item img {
+    width: 100%;
+    margin: 0 auto -4rem;
   }
 
   .heading {
@@ -262,6 +349,10 @@
   .card img {
     height: 100%;
     margin: auto;
+  }
+
+  .team {
+    margin: 5rem 0 5rem 0;
   }
 
   .footer-area {
@@ -319,7 +410,7 @@
   }
 
   footer {
-    background-color: #002336;
+    background: linear-gradient(to bottom, rgba(13, 14, 13, 1), rgba(0, 35, 54, 1));
     background-size: cover;
     overflow: hidden;
   }
@@ -434,6 +525,10 @@
     height: 20rem;
   }
 
+  .team {
+    margin: 5rem 0 5rem 0;
+  }
+
   .team_div {
     padding: 2rem;
     margin: auto;
@@ -467,7 +562,7 @@
   .footer-text h2 {
     position: static;
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     font-size: 1.5rem;
     margin-bottom: 2rem;
   }
@@ -476,7 +571,7 @@
     font-size: 1rem;
     position: static;
     margin: auto;
-    width: 80%;
+    width: 90%;
   }
 
   .form form {
@@ -484,7 +579,7 @@
   }
 
   footer {
-    background-color: #002336;
+    background: linear-gradient(to bottom, rgba(13, 14, 13, 1), rgba(0, 35, 54, 1));
     background-size: cover;
     overflow: hidden;
   }
