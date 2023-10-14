@@ -94,3 +94,20 @@ function alertar() {
     alert('Sua mensagem foi enviada!');
   }, 2000);
 }
+
+// EFEITO APARIÇÃO
+
+document.addEventListener("DOMContentLoaded", function() {
+  window.addEventListener("scroll", function() {
+      const sections = document.querySelectorAll(".aparecer");
+      
+      sections.forEach(function(section) {
+          const position = section.getBoundingClientRect().top;
+          const screenHeight = window.innerHeight;
+
+          if (position < screenHeight * 0.6) {
+              section.classList.add("aparecer-ativo");
+          }
+      });
+  });
+});

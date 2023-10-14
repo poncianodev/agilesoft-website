@@ -26,16 +26,6 @@ body {
   --container2: 112rem;
 }
 
-/* HEADER */
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 99;
-}
-
 hr {
   border: 0;
   height: 1px;
@@ -45,7 +35,26 @@ hr {
       rgba(0, 0, 0, 0));
 }
 
+.aparecer {
+  opacity: 0; 
+  transform: translateY(60px);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
 
+.aparecer.aparecer-ativo {
+  opacity: 1; 
+  transform: translateY(0); 
+}
+
+/* HEADER */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
 
 .container_header {
   display: flex;
@@ -189,11 +198,17 @@ nav.menu-flex a:last-child {
   font-size: 1.6rem;
   text-transform: uppercase;
   text-shadow: 1px 1px 2px var(--cor-preto);
+  
 }
 
 .hero-title strong {
   color: var(--cor-azul-claro);
 }
+
+.fead-in {
+  animation: feadIn 5s forwards;
+}
+
 
 .hero-button {
   background-image: radial-gradient(100% 100% at 100% 0, var(--cor-azul-claro) 0, var(--cor-azul-médio) 100%);
@@ -253,6 +268,10 @@ hr {
 .sobre-nos-item p {
   max-width: 50rem;
   font-size: 1.2rem;
+}
+
+.sobre-nos-item img.animated-image {
+  animation: myAnim 3s linear infinite;
 }
 
 strong {
