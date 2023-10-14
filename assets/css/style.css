@@ -179,7 +179,6 @@ nav.menu-flex a:last-child {
 .hero-bg::before {
   content: '';
   background-color: rgba(0, 0, 0, 0.4);
-  /* Cor preta com 50% de opacidade */
   position: absolute;
   top: 0;
   left: 0;
@@ -206,7 +205,7 @@ nav.menu-flex a:last-child {
 }
 
 .fead-in {
-  animation: feadIn 5s forwards;
+  animation: feadIn 7s forwards;
 }
 
 
@@ -261,7 +260,7 @@ hr {
 .sobre-nos-item h2 {
   text-transform: uppercase;
   color: var(--cor-azul-claro);
-  font-size: 2rem;
+  font-size: 2rem; 
   max-width: 50rem;
 }
 
