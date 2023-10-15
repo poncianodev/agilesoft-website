@@ -1,14 +1,111 @@
+@media (min-width: 1367px) and (max-width: 1600px) {
+  .sobre-nos-container {
+    margin: 1rem auto;
+  }
+
+  #services {
+    margin: 7rem auto;
+  }
+
+  .team {
+    margin: 7rem 0 10rem 0;
+  }
+
+  .footer-text h2 {
+    max-width: 30rem;
+  }
+
+  .footer-text p {
+    max-width: 30rem;
+  }
+
+  .footer-area {
+    gap: 10rem;
+    overflow: hidden;
+    margin: 5rem auto;
+  }
+
+  .form form {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1366px) {
+  .sobre-nos-container {
+    margin: 7rem 0;
+  }
+
+  .sobre-nos-item h2 {
+    font-size: 1.8rem;
+  }
+
+  .sobre-nos-item p {
+    font-size: 1.1rem;
+    max-width: 35rem;
+    text-align: left;
+  }
+
+  .sobre-nos-item:nth-child(2) {
+    margin-right: 1.5rem;
+  }
+
+  .footer-text h2 {
+    max-width: 28rem;
+  }
+
+  .footer-text p {
+    max-width: 20rem;
+  }
+
+  .footer-area {
+    gap: 13rem;
+    overflow: hidden;
+    margin: 5rem auto;
+  }
+
+  .form form {
+    margin-bottom: 3rem;
+  }
+}
+
 @media (min-width: 769px) and (max-width: 1024px) {
   .container_header {
     padding: 16px 64px;
   }
 
-  .home_title {
-    font-size: 1.8rem;
+  .hero-bg {
+    background-position: right;
+    overflow: hidden;
   }
 
-  .hero-bg {
-    height: 100vh;
+  .hero-title {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+
+  .hero-title h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .hero-button {
+    font-size: 1.3rem;
+    padding: 1.5rem;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .hero-button:hover {
+    transform: translate(-50%, -50%);
+  }
+
+  .heading {
+    font-size: 2.5rem;
+    width: 80%;
+    margin: 0 auto 1rem;
   }
 
   .sobre-nos-container {
@@ -26,13 +123,23 @@
   }
 
   .sobre-nos-item h2 {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     max-width: 50rem;
   }
 
   .sobre-nos-item p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     max-width: 50rem;
+  }
+
+  .h3 {
+    font-size: 1.20rem;
+  }
+
+  .card-text {
+    font-size: 1.10rem;
+    margin: 0 1rem;
+    text-align: center;
   }
 
   .sobre-nos-item img {
@@ -40,8 +147,16 @@
     margin: -5rem;
   }
 
+  #services {
+    margin: 7rem 0;
+  }
+
   .service-card {
     max-width: 35%;
+  }
+
+  .team {
+    margin: 7rem 0 10rem 0;
   }
 
   .footer-text h2 {
@@ -54,8 +169,22 @@
     max-width: 25rem;
   }
 
+  .footer-area {
+    gap: 5rem;
+    margin: 3rem auto 0;
+  }
+
+  .form {
+    margin: 0 auto;
+  }
+
   .form form {
-    margin-right: 0;
+    margin-bottom: 3rem;
+    width: 75%;
+  }
+
+  .back_to_top {
+    bottom: 85px;
   }
 }
 
@@ -195,7 +324,7 @@
   }
 
   .form {
-    margin-right: 4.5rem;
+    margin-right: 4.5rem
   }
 
   .footer-text p,
@@ -375,6 +504,10 @@
     font-size: 1.1rem;
     margin: 0 auto;
     width: 70%;
+  }
+
+  .form {
+    margin: 0 auto;
   }
 
   .form form {
@@ -572,6 +705,10 @@
     position: static;
     margin: auto;
     width: 90%;
+  }
+
+  .form {
+    margin: 0 auto;
   }
 
   .form form {
