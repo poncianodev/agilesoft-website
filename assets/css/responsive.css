@@ -184,7 +184,21 @@
   }
 
   .back_to_top {
-    bottom: 85px;
+    bottom: 87px;
+    right: 10px;
+  }
+
+  ion-icon {
+    font-size: 35px;
+  }
+
+  .whatsapp-btn img {
+    width: 40px;
+  }
+
+  .whatsapp-btn {
+    bottom: 9rem;
+    right: .4rem;
   }
 }
 
@@ -350,7 +364,22 @@
   }
 
   .back_to_top {
-    bottom: 90px;
+    bottom: 110px;
+    right: 10px;
+    width: 35px;
+  }
+
+  ion-icon {
+    font-size: 35px;
+  }
+
+  .whatsapp-btn img {
+    width: 40px;
+  }
+
+  .whatsapp-btn {
+    bottom: 10.5rem;
+    right: .3rem;
   }
 }
 
@@ -547,9 +576,24 @@
     background-size: cover;
     overflow: hidden;
   }
-
+  
   .back_to_top {
     bottom: 90px;
+    right: 10px;
+    width: 35px;
+  }
+
+  ion-icon {
+    font-size: 35px;
+  }
+
+  .whatsapp-btn img {
+    width: 40px;
+  }
+
+  .whatsapp-btn {
+    bottom: 9rem;
+    right: .3rem;
   }
 }
 
@@ -723,6 +767,21 @@
 
   .back_to_top {
     bottom: 90px;
+    right: 8px;
+    width: 35px;
+  }
+
+  ion-icon {
+    font-size: 35px;
+  }
+
+  .whatsapp-btn img {
+    width: 37px;
+  }
+
+  .whatsapp-btn {
+    bottom: 9rem;
+    right: .3rem;
   }
 
   .footer-end {

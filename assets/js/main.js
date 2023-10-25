@@ -11,10 +11,18 @@ window.onload = function () {
 
   const menu_btn = document.querySelector('.hamburger');
   const mobile_menu = document.querySelector('.mobile-nav');
+  const links = mobile_menu.querySelectorAll('a');
 
   menu_btn.addEventListener('click', function () {
     menu_btn.classList.toggle('is-active');
     mobile_menu.classList.toggle('is-active');
+  });
+
+  links.forEach(function (link) {
+    link.addEventListener('click', function () {
+      menu_btn.classList.remove('is-active');
+      mobile_menu.classList.remove('is-active');
+    });
   });
 };
 
@@ -51,6 +59,22 @@ window.addEventListener('scroll', () => {
   }
 });
 back_to_top.addEventListener('click', function (e) {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth',
+  });
+});
+
+let whatsBtn = document.querySelector('.whatsapp-btn');
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 100) {
+    whatsBtn.classList.add('show');
+  } else {
+    whatsBtn.classList.remove('show');
+  }
+});
+whatsBtn.addEventListener('click', function (e) {
   window.scrollTo({
     top: 0,
     left: 0,
@@ -97,17 +121,26 @@ function alertar() {
 
 // EFEITO APARIÇÃO
 
-document.addEventListener("DOMContentLoaded", function() {
-  window.addEventListener("scroll", function() {
-      const sections = document.querySelectorAll(".aparecer");
-      
-      sections.forEach(function(section) {
-          const position = section.getBoundingClientRect().top;
-          const screenHeight = window.innerHeight;
+document.addEventListener('DOMContentLoaded', function () {
+  window.addEventListener('scroll', function () {
+    const sections = document.querySelectorAll('.aparecer');
 
-          if (position < screenHeight * 0.6) {
-              section.classList.add("aparecer-ativo");
-          }
-      });
+    sections.forEach(function (section) {
+      const position = section.getBoundingClientRect().top;
+      const screenHeight = window.innerHeight;
+
+      if (position < screenHeight * 0.6) {
+        section.classList.add('aparecer-ativo');
+      }
+    });
   });
+});
+
+//BOTÃO HERO
+
+document.getElementById('btn-hero').addEventListener('click', function () {
+  var phoneNumber = '5519995972622';
+  var whatsappURL = 'https://api.whatsapp.com/send?phone=' + phoneNumber;
+
+  window.open(whatsappURL);
 });

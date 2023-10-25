@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -21,10 +25,21 @@ body {
   --cor-azul-claro: #029fa6;
   --cor-azul-médio: #154c62;
   --cor-azul-escuro: #002336;
-  --container: 120rem;
-  --primary: hsl(201.43, 13.21%, 58.43%);
-  --container2: 112rem;
 }
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cor-preto);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cor-azul-médio);
+  border-radius: 3px;
+}
+
 
 hr {
   border: 0;
@@ -36,14 +51,14 @@ hr {
 }
 
 .aparecer {
-  opacity: 0; 
+  opacity: 0;
   transform: translateY(60px);
   transition: opacity 1.5s ease, transform 1.5s ease;
 }
 
 .aparecer.aparecer-ativo {
-  opacity: 1; 
-  transform: translateY(0); 
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* HEADER */
@@ -141,9 +156,9 @@ nav.menu-flex a:last-child {
   min-height: 100vh;
   display: block;
   z-index: 98;
-  background-color: #002336;
-  padding-top: 120px;
-  transition: 0.5s;
+  background-color: var(--cor-azul-escuro);
+  padding-top: 15rem;
+  transition: 1s;
 }
 
 .mobile-nav.is-active {
@@ -155,15 +170,17 @@ nav.menu-flex a:last-child {
   width: 100%;
   max-width: 200px;
   text-align: center;
-  margin: 0 auto 16px;
-  padding: 12px 16px;
+  margin: 0 auto 1rem;
+  padding: 1rem 1rem;
   background-color: var(--cor-azul-médio);
   color: var(--cor-branco);
   text-decoration: none;
+  border-radius: 1rem;
 }
 
 .mobile-nav a:hover {
   background-color: var(--cor-azul-claro);
+  color: var(--cor-branco);
 }
 
 .hero-bg {
@@ -197,7 +214,7 @@ nav.menu-flex a:last-child {
   font-size: 1.6rem;
   text-transform: uppercase;
   text-shadow: 1px 1px 2px var(--cor-preto);
-  
+
 }
 
 .hero-title strong {
@@ -205,7 +222,7 @@ nav.menu-flex a:last-child {
 }
 
 .fead-in {
-  animation: feadIn 7s forwards;
+  animation: feadIn 8s forwards;
 }
 
 
@@ -599,6 +616,27 @@ button.card-button a {
 }
 
 /* FOOTER */
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 6rem;
+  right: 1.2rem;
+  opacity: 0;
+  transform: translateY(-30rem);
+  transition: all 0.2s ease-in-out;
+  animation: myAnim 3s linear infinite;
+}
+
+.whatsapp-btn img {
+  width: 50px;
+}
+
+.whatsapp-btn.show {
+  opacity: 1;
+  pointer-events: auto;
+  cursor: pointer;
+  transform: translateY(0rem);
+}
 
 .back_to_top {
   position: fixed;
