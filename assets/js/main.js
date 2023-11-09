@@ -112,13 +112,6 @@ document.getElementById('telefone').addEventListener('input', function () {
   this.value = this.value.replace(/\D/g, '');
 });
 
-//ALERT DE MSG
-function alertar() {
-  setTimeout(function () {
-    alert('Sua mensagem foi enviada!');
-  }, 2000);
-}
-
 // EFEITO APARIÇÃO
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -139,8 +132,98 @@ document.addEventListener('DOMContentLoaded', function () {
 //BOTÃO HERO
 
 document.getElementById('btn-hero').addEventListener('click', function () {
-  var phoneNumber = '5519995972622';
-  var whatsappURL = 'https://api.whatsapp.com/send?phone=' + phoneNumber;
+  let phoneNumber = '5519995972622';
+  let whatsappURL = 'https://api.whatsapp.com/send?phone=' + phoneNumber;
 
   window.open(whatsappURL);
 });
+
+// FORMULÁRIO
+
+const form = document.getElementById('form');
+const inputs = document.querySelectorAll('.required');
+const spans = document.querySelectorAll('.span-required');
+const phoneRegex = /^\d{11}$/;
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+form.addEventListener('submit', event => {
+  if (!validateForm()) {
+    event.preventDefault();
+    openModal();
+  } else {
+      setTimeout(function () {
+        alert('Sua mensagem foi enviada!');
+      }, 2000);
+  }
+});
+
+function setError(index) {
+  inputs[index].style.border = '2px solid #e63636';
+  spans[index].style.display = 'block';
+}
+
+function removeError(index) {
+  inputs[index].style.border = '';
+  spans[index].style.display = 'none';
+}
+
+function nameValidate() {
+  if (inputs[0].value.length < 3) {
+    setError(0);
+  } else {
+    removeError(0);
+  }
+}
+
+function phoneValidate() {
+  if (phoneRegex.test(inputs[1].value)) {
+    removeError(1);
+  } else {
+    setError(1);
+  }
+}
+
+function emailValidate() {
+  if (emailRegex.test(inputs[2].value)) {
+    removeError(2);
+  } else {
+    setError(2);
+  }
+}
+
+function validateForm() {
+  nameValidate();
+  emailValidate();
+  phoneValidate();
+
+  const termsAccepted = termsValidate();
+
+  return !(
+    inputs[0].style.border ||
+    inputs[1].style.border ||
+    inputs[2].style.border ||
+    !termsAccepted
+  );
+}
+
+function termsValidate() {
+  const termsCheckbox = document.getElementById('termsCheckbox');
+
+  if (!termsCheckbox.checked) {
+    openModal();
+    return false;
+  } else {
+    closeModal();
+    return true;
+  }
+}
+
+function openModal() {
+  const modal = document.getElementById('termsModal');
+  modal.style.display = 'block';
+}
+
+function closeModal() {
+  const modal = document.getElementById('termsModal');
+  modal.style.display = 'none';
+}

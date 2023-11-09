@@ -597,6 +597,14 @@
   }
 }
 
+
+@media screen and (max-width: 600px) {
+  .modal-content {
+    margin: 50% auto;
+    width: 50%;
+  }
+}
+
 @media (max-width: 425px) {
   nav {
     display: none;
@@ -811,6 +819,7 @@
   }
 }
 
+
 /* KEYFRAME */
 
 @keyframes myAnim {
@@ -836,3 +845,4 @@
     opacity: 1;
   }
 }
+

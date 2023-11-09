@@ -237,21 +237,39 @@
       </div>
 
       <div class="form">
-        <form action="https://formsubmit.co/agilesoftsystem@gmail.com" method="POST">
-          <input type="text" name="name" required placeholder="Qual o seu nome?">
-          <input type="text" id="telefone" name="telefone" required maxlength="11" placeholder="Seu Whatsapp" />
-          <input type="email" name="email" id="email" placeholder="Digite seu melhor e-mail" required>
-          <input class="text" type="text" name="text" required placeholder="Sua mensagem">
+        <form action="https://formsubmit.co/agilesoftsystem@gmail.com" method="POST" id="form">
+          <input type="text" id="username" name="name" placeholder="Qual o seu nome?" class="inputs required"
+            oninput="nameValidate()">
+          <span class="span-required">O nome deve ter no mínimo 3 caracteres</span>
+
+          <input type="text" id="telefone" name="telefone" maxlength="11" placeholder="Seu Whatsapp"
+            class="inputs required" oninput="phoneValidate()" />
+          <span class="span-required">Digite um telefone válido</span>
+
+          <input type="email" name="email" id="email" placeholder="Digite seu melhor e-mail" class="inputs required"
+            oninput="emailValidate()">
+          <span class="span-required">Digite um e-mail válido</span>
+
+          <input class="text" id="user-text" type="text" name="text" placeholder="Sua mensagem">
+
           <button type="submit" onclick="alertar()">ENVIAR</button>
 
           <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
           <input type="hidden" name="_captcha" value="false">
           <div class="checkbox">
-            <input class="check" type="checkbox" name="checkbox">
-            <p>Eu li e aceito os <a href="../politicar-privacidade/politicas.html">termos de politica e privacidade</a>
+            <input class="check" type="checkbox" name="checkbox" id="termsCheckbox">
+            <p>Eu li e aceito as <a href="./politicas.html" target="_blank">políticas de privacidade</a>
             </p>
           </div>
         </form>
+      </div>
+
+      <div class="modal" id="termsModal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <p>A Agile Soft System segue os padrões da LGPD para proteger seus dados. Marque a caixa abaixo para confirmar
+            que leu e concorda com nossos termos de privacidade. Obrigado!</p>
+        </div>
       </div>
 
       <div class="back_to_top">

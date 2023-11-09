@@ -25,6 +25,7 @@ body {
   --cor-azul-claro: #029fa6;
   --cor-azul-médio: #154c62;
   --cor-azul-escuro: #002336;
+  --cor-vermelha: #e63636;
 }
 
 ::-webkit-scrollbar {
@@ -724,11 +725,11 @@ form input {
   width: 95%;
   align-items: center;
   border-radius: 0.5rem;
-  border: none;
   padding: 1rem 0.5rem;
   margin: 1rem auto;
   color: var(--cor-preto);
   font-size: 1rem;
+  outline: none;
 }
 
 form .text {
@@ -752,6 +753,13 @@ form button {
 form button:hover {
   background-color: var(--cor-azul-médio);
   color: var(--cor-azul-claro);
+}
+
+.span-required {
+  font-size: .8rem;
+  display: none;
+  margin: -.5rem auto;
+  color: var(--cor-vermelha);
 }
 
 /*CHECKBOX*/
@@ -820,4 +828,43 @@ form button:hover {
 .social-links .social-icons:nth-child(3) a:hover {
   background-color: #0e76a8;
   color: var(--cor-branco);
+}
+
+/* MODAL */
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  background-color: var(--cor-azul-escuro);
+  margin: 20% auto;
+  padding: 1.5rem;
+  border: 1px solid var(--cor-azul-médio);
+  width: 30%;
+  color: var(--cor-branco);
+  text-align: center;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 1rem;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--cor-azul-claro);
+  text-decoration: none;
+  cursor: pointer;
 }
